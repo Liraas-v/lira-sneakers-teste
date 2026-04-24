@@ -1,39 +1,10 @@
-// ── Regras de Fidelidade ──────────────────────────────────
 export const POINTS_PER_REAL = 1;
 
 export const TIERS = [
-  {
-    name: 'Bronze',
-    min: 0,
-    max: 399,
-    icon: '🥉',
-    color: '#cd7f32',
-    perks: ['5% desconto na próxima limpeza'],
-  },
-  {
-    name: 'Prata',
-    min: 400,
-    max: 799,
-    icon: '🥈',
-    color: '#c0c0c0',
-    perks: ['10% desconto', 'Frete grátis (coleta)'],
-  },
-  {
-    name: 'Ouro',
-    min: 800,
-    max: 1599,
-    icon: '🥇',
-    color: '#fbbf24',
-    perks: ['15% desconto', 'Frete grátis', 'Prioridade no agendamento'],
-  },
-  {
-    name: 'Diamante',
-    min: 1600,
-    max: Infinity,
-    icon: '💎',
-    color: '#a5f3fc',
-    perks: ['20% desconto', 'Frete grátis', 'Atendimento VIP', 'Brinde mensal'],
-  },
+  { name: 'Bronze',   min: 0,    max: 399,      icon: '🥉', color: '#cd7f32', perks: ['5% desconto na próxima limpeza'] },
+  { name: 'Prata',    min: 400,  max: 799,      icon: '🥈', color: '#c0c0c0', perks: ['10% desconto', 'Frete grátis (coleta)'] },
+  { name: 'Ouro',     min: 800,  max: 1599,     icon: '🥇', color: '#fbbf24', perks: ['15% desconto', 'Frete grátis', 'Prioridade no agendamento'] },
+  { name: 'Diamante', min: 1600, max: Infinity, icon: '💎', color: '#a5f3fc', perks: ['20% desconto', 'Frete grátis', 'Atendimento VIP', 'Brinde mensal'] },
 ];
 
 export const REWARDS = [
@@ -58,25 +29,24 @@ export const SERVICOS = [
 ];
 
 export const FAQ_ITEMS = [
-  { id: 'f1', pergunta: 'Quanto tempo leva a limpeza completa?',       resposta: 'A limpeza completa leva em média 3 a 5 dias úteis. Temos a opção de urgência com entrega em 24h mediante taxa adicional.' },
-  { id: 'f2', pergunta: 'Vocês fazem coleta e entrega?',               resposta: 'Sim! Fazemos coleta e entrega para clientes Prata, Ouro e Diamante. Para clientes Bronze, a coleta tem um valor adicional.' },
-  { id: 'f3', pergunta: 'Como funciona o programa de pontos?',         resposta: 'Você ganha 1 ponto por cada R$ 1 gasto. Os pontos podem ser trocados por serviços grátis, descontos e kits exclusivos.' },
-  { id: 'f4', pergunta: 'Atendem tênis de grife e luxo?',              resposta: 'Com certeza! Temos um serviço especial "Limpeza Premium (Grife)" com cuidado especializado para Balenciaga, Yeezy, Louis Vuitton e outros.' },
-  { id: 'f5', pergunta: 'Os valores mostrados no app são definitivos?', resposta: 'Os valores são estimativas a partir do serviço. O valor final é confirmado após avaliação presencial.' },
-  { id: 'f6', pergunta: 'Posso acompanhar meu serviço em andamento?',  resposta: 'Sim! Na aba "Meus Pedidos" do perfil você vê em tempo real cada etapa do seu serviço.' },
+  { id: 'f1', pergunta: 'Quanto tempo leva a limpeza completa?',        resposta: 'A limpeza completa leva em média 3 a 5 dias úteis. Temos a opção de urgência com entrega em 24h mediante taxa adicional.' },
+  { id: 'f2', pergunta: 'Vocês fazem coleta e entrega?',                resposta: 'Sim! Fazemos coleta e entrega para clientes Prata, Ouro e Diamante. Para clientes Bronze, a coleta tem um valor adicional.' },
+  { id: 'f3', pergunta: 'Como funciona o programa de pontos?',          resposta: 'Você ganha 1 ponto por cada R$ 1 gasto. Os pontos podem ser trocados por serviços grátis, descontos e kits exclusivos.' },
+  { id: 'f4', pergunta: 'Atendem tênis de grife e luxo?',               resposta: 'Com certeza! Temos serviço especial para Balenciaga, Yeezy, Louis Vuitton e outros.' },
+  { id: 'f5', pergunta: 'Os valores mostrados no app são definitivos?',  resposta: 'Os valores são estimativas. O valor final é confirmado após avaliação presencial.' },
+  { id: 'f6', pergunta: 'Posso acompanhar meu serviço em andamento?',   resposta: 'Sim! Na aba "Meus Pedidos" você vê em tempo real cada etapa do seu serviço.' },
 ];
 
 export const NAV_ITEMS = [
-  { id: 'home',       icon: 'home',          label: 'Início'   },
-  { id: 'servicos',   icon: 'list',          label: 'Serviços' },
-  { id: 'carrinho',   icon: 'shopping-cart', label: 'Orçamento'},
-  { id: 'fidelidade', icon: 'award',         label: 'Pontos'   },
-  { id: 'perfil',     icon: 'user',          label: 'Perfil'   },
+  { id: 'home',       icon: 'home',          label: 'Início'    },
+  { id: 'servicos',   icon: 'list',          label: 'Serviços'  },
+  { id: 'carrinho',   icon: 'shopping-cart', label: 'Orçamento' },
+  { id: 'fidelidade', icon: 'award',         label: 'Pontos'    },
+  { id: 'perfil',     icon: 'user',          label: 'Perfil'    },
 ];
 
 export const WHATSAPP_NUMBER = '5511930733933';
 
-// ── Prazo de entrega por serviço (item 3 — exibido nos cards) ──
 export const PRAZOS = {
   'Limpeza Completa':        '3 a 5 dias úteis',
   'Limpeza Premium (Grife)': '5 a 7 dias úteis',
@@ -91,49 +61,13 @@ export const PRAZOS = {
   'Taxa de Urgência':        '24 horas',
 };
 
-// ── Depoimentos reais (item 2 — landing page) ──────────────────
-// Substitua por depoimentos reais dos seus clientes
 export const DEPOIMENTOS = [
-  {
-    id: 'd1',
-    nome: 'Lucas M.',
-    cidade: 'São Paulo, SP',
-    texto: 'Mandei meu Air Jordan 1 que estava todo manchado. Voltou como se fosse novo. Valeu cada centavo.',
-    servico: 'Limpeza Completa',
-    nota: 5,
-    inicial: 'L',
-  },
-  {
-    id: 'd2',
-    nome: 'Fernanda R.',
-    cidade: 'Santo André, SP',
-    texto: 'Yeezy 350 com a entressola amarelada. Depois da pintura ficou perfeito. Atendimento rápido e muito cuidado.',
-    servico: 'Pintura Entressola',
-    nota: 5,
-    inicial: 'F',
-  },
-  {
-    id: 'd3',
-    nome: 'Gabriel S.',
-    cidade: 'São Bernardo, SP',
-    texto: 'Impermeabilizei dois pares antes do inverno. Processo rápido, só 2 dias. Recomendo demais.',
-    servico: 'Impermeabilização',
-    nota: 5,
-    inicial: 'G',
-  },
-  {
-    id: 'd4',
-    nome: 'Camila T.',
-    cidade: 'São Paulo, SP',
-    texto: 'Meu New Balance de camurça parecia perdido. A restauração salvou o tênis. Nota 10.',
-    servico: 'Restauração de Camurça',
-    nota: 5,
-    inicial: 'C',
-  },
+  { id: 'd1', nome: 'Lucas M.',   cidade: 'São Paulo, SP',    texto: 'Mandei meu Air Jordan 1 que estava todo manchado. Voltou como se fosse novo. Valeu cada centavo.',            servico: 'Limpeza Completa',      nota: 5, inicial: 'L' },
+  { id: 'd2', nome: 'Fernanda R.', cidade: 'Santo André, SP', texto: 'Yeezy 350 com a entressola amarelada. Depois da pintura ficou perfeito. Atendimento rápido e muito cuidado.', servico: 'Pintura Entressola',     nota: 5, inicial: 'F' },
+  { id: 'd3', nome: 'Gabriel S.', cidade: 'São Bernardo, SP', texto: 'Impermeabilizei dois pares antes do inverno. Processo rápido, só 2 dias. Recomendo demais.',                  servico: 'Impermeabilização',      nota: 5, inicial: 'G' },
+  { id: 'd4', nome: 'Camila T.',  cidade: 'São Paulo, SP',    texto: 'Meu New Balance de camurça parecia perdido. A restauração salvou o tênis. Nota 10.',                           servico: 'Restauração de Camurça', nota: 5, inicial: 'C' },
 ];
 
-// ── Localização e área de atendimento (item 3) ─────────────────
-// Edite com os dados reais do seu negócio
 export const LOCATION = {
   cidade:      'São Paulo',
   estado:      'SP',
@@ -146,14 +80,12 @@ export const LOCATION = {
     { dia: 'Sábado',          hora: '8h às 18h' },
     { dia: 'Domingo',         hora: '8h às 12h' },
   ],
-  googleMaps: 'https://www.bing.com/maps/search?mepi=57%7E%7EEmbedded%7ELargeMapLink&ty=18&v=2&sV=1&qpvt=av+parada+pinto+737&FORM=MIRE&q=Av+Parada+Pinto%2C+737%2C+Cachoeirinha%2C+S%C3%A3o+Paulo+-+SP%2C+02611-000&ppois=-23.468914_-46.66318_Av+Parada+Pinto%2C+737%2C+Cachoeirinha%2C+S%C3%A3o+Paulo+-+SP%2C+02611-000_%7E&cp=-23.468914%7E-46.663180&lvl=11&style=r', // substitua pelo link real
+  googleMaps: 'https://www.bing.com/maps/search?q=Av+Parada+Pinto%2C+737%2C+Cachoeirinha%2C+S%C3%A3o+Paulo',
 };
 
-// ── Números de impacto (landing page) ─────────────────────────
-// Atualize com dados reais
 export const NUMEROS = [
-  { valor: '500+',  label: 'Pares restaurados'  },
-  { valor: '4.9★',  label: 'Nota média'         },
-  { valor: '3 dias', label: 'Prazo médio'        },
-  { valor: '100%',  label: 'Satisfação garantida'},
+  { valor: '500+',   label: 'Pares restaurados'   },
+  { valor: '4.9★',   label: 'Nota média'          },
+  { valor: '3 dias', label: 'Prazo médio'         },
+  { valor: '100%',   label: 'Satisfação garantida'},
 ];
