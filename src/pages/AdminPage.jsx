@@ -1,31 +1,3 @@
-/**
- * src/pages/AdminPage.jsx
- *
- * Painel de Administração — Lira Sneakers
- *
- * FUNCIONALIDADES:
- * - Dashboard com métricas: faturamento, recebido, a receber, ticket médio
- * - Gráfico de receita mensal e status de pagamentos
- * - Gestão de pedidos com filtros
- * - Adição rápida de pedido por texto (sem formulário)
- * - Registro de pagamento parcial ou total
- * - Controle de pendências financeiras com barra de progresso
- * - CRUD completo: criar, editar, excluir pedidos
- *
- * INSTALAÇÃO:
- * 1. Copie este arquivo para src/pages/AdminPage.jsx
- * 2. Adicione Chart.js: npm install chart.js react-chartjs-2
- * 3. Adicione a rota em src/App.jsx:
- *    import AdminPage from './pages/AdminPage';
- *    const PAGES = { ..., admin: <AdminPage /> };
- * 4. Adicione link de acesso em PerfilPage.jsx ou Sidebar.jsx
- *    (sugestão: visível apenas para usuário admin)
- *
- * DADOS:
- * Atualmente em memória (resets ao recarregar).
- * Para persistir: substitua o estado `pedidos` por chamadas ao Supabase.
- */
-
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import {
   Chart as ChartJS,
